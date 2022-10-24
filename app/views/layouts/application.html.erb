@@ -9,7 +9,36 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <header class = "header">
+    <div class = inner_header>
+      <div class = "header-left-nav">
+        <a href=”/”>
+          <img src= "	https://presite-potepancamp-rails-02.herokuapp.com/assets/logo.png" alt = "ロゴ画像">#ロゴについて
+        </a>
+          <form action="" method="get" accept-charset="UTF-8">#エリア検索について
+            <div class = "header-sharch d-lg-inline-block d-none">
+              <input type="text" name="area" id="area" value="" class="form-control" placeholder="エリア">
+              <i class="fas fa-map-marker-alt">
+                ::before
+              </i>
+            </div>
+            <div class="header-sharch d-lg-inline-block d-none">
+              <input type="text" name="keyword" id="keyword" value="" class="form-control" placeholder="キーワード">
+              <i class="fas fa-search">
+                ::before
+              </i>
+            </div>
+            <input type="submit" name="commit" value="" class="d-none" data-disable-with="">
+          </form>
+      </div>
+      <div class = "header-right-nav">
+        <ul>
+          <li></li>  #ログインについて
+          <li></li>  #新規登録について
+        </ul>
+      </div>
+    </div>
+  </header>
   <body>
     <%= yield %>
   </body>
